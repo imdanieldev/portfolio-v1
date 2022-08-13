@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- link custom css -->
+     <link rel="stylesheet" href="css/style.css">
+     <title>Daniel Nasr Web Developer</title>
+     <base target="_blank">
+</head>
+
+<body>
+     <!-- modal popup -->
+     <div class="modal">
+          <div class="head">
+               <div class="close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
+                              stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                         <g opacity="0.4">
+                              <path d="M9.16992 14.8299L14.8299 9.16992" stroke="#292D32" stroke-width="1.5"
+                                   stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M14.8299 14.8299L9.16992 9.16992" stroke="#292D32" stroke-width="1.5"
+                                   stroke-linecap="round" stroke-linejoin="round" />
+                         </g>
+                    </svg>
+               </div>
+               <h3>Contact</h3>
+          </div>
+          <main>
+               <form onsubmit="return check()" name="order" autocomplete="off">
+                    <input type="text" placeholder="Your Name..." name="FirstName">
+                    <input type="text" placeholder="Your Last Name..." name="LastName">
+                    <input type="number" placeholder="Your Phone Number..." name="PhoneNumber">
+                    <div class="service">
+                         <label>
+                              BackEnd
+                              <input value="backend" type="radio" name="service">
+                              <span></span>
+                         </label>
+                         <label>
+                              FrontEnd
+                              <input value="frontend" type="radio" name="service">
+                              <span></span>
+                         </label>
+                         <label>
+                              Full Web
+                              <input value="full Web" type="radio" name="service" checked>
+                              <span></span>
+                         </label>
+                    </div>
+                    <input type="text" placeholder="Your Company Name..." name="CompanyName">
+                    <textarea placeholder="Your Description..." name="Desc"></textarea>
+                    <p></p>
+                    <button>Submit</button>
+               </form>
+          </main>
+     </div>
+     <!-- Header -->
+     <header class="flex flex-column justify-content-center align-items-center">
+          <h2></h2>
+          <p></p>
+     </header>
+     <main>
+          <!-- Services -->
+          <div class="services">
+               <div class="card">
+                    <h5>Backend</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque ducimus, dolore sapiente maxime
+                         illo
+                         ad ea recusandae consequatur aliquam quod obcaecati harum corrupti voluptates ipsam similique
+                         aperiam, eaque, molestiae cumque!</p>
+                    <button class="btn-2">Order</button>
+               </div>
+               <div class="card">
+                    <h5>Frontend</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam repellendus nam doloribus
+                         odio
+                         tempore rerum voluptate. Ullam provident, qui similique inventore dignissimos, quam iure sed
+                         amet
+                         consequuntur est nulla voluptate.</p>
+                    <button class="btn-2">Order</button>
+               </div>
+               <div class="card">
+                    <h5>FullWeb</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic vitae libero minima sed ex officia
+                         eum
+                         corrupti sit laudantium quia amet repellendus exercitationem assumenda, temporibus iure qui,
+                         aperiam
+                         numquam ducimus!</p>
+                    <button class="btn-2">Order</button>
+               </div>
+          </div>
+          <!-- Skills -->
+          <div class="project">
+               <h3 class="h3 gr">My Project</h3>
+               <div class="projects">
+                    <button class="btn-1">
+                         <a href="//imdanieldev.github.io/ImageEditor">Image Editor</a>
+                    </button>
+                    <button class="btn-1">
+                         <a href="//imdanieldev.github.io/todo">todo list</a>
+                    </button>
+                    <button class="btn-1">
+                         <a href="//imdanieldev.github.io/QR-Scanner">QR Scanner</a>
+                    </button>
+                    <button class="btn-1">
+                         <a href="//imdanieldev.github.io/TextToSpeech">Text To Speech</a>
+                    </button>
+               </div>
+          </div>
+          <footer>
+               <p class="gr" style="font-weight: 600;">Designed and developed with love by Daniel</p>
+          </footer>
+     </main>
+     <!-- link custom js -->
+     <script src="js/typed.js"></script>
+     <script src="js/script.js"></script>
+</body>
+
+</html>

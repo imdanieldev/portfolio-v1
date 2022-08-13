@@ -1,0 +1,473 @@
+/* link font */
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firacode/v21/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_GNsFVc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firacode/v21/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sFVc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firacode/v21/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_A9sFVc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firacode/v21/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_ONrFVc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firacode/v21/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_NprFVc.ttf) format('truetype');
+}
+/* html scroll */
+html {
+  scroll-behavior: smooth;
+}
+/* style for all */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+/* Select Text Style */
+::selection {
+  background-color: #161616;
+  color: #FFF;
+}
+/* style to body */
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  font-family: "Fira Code", sans-serif;
+}
+main {
+  min-height: 100vh;
+  min-width: 100vw;
+  position: relative;
+  background: #FFF;
+  z-index: 3;
+  margin-top: 100vh;
+}
+/* More Style */
+header {
+  z-index: 2;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(359, 100%, 82.9%);
+  background-image: radial-gradient(at 97% 0%, hsl(319, 100%, 82.9%) 0%, transparent 50%), radial-gradient(at 88% 32%, hsl(240, 100%, 67.1%) 0%, transparent 50%), radial-gradient(at 0% 0%, hsl(209, 80.4%, 70%) 0%, transparent 50%), radial-gradient(at 70% 70%, hsl(359, 50%, 74.9%) 0%, transparent 50%), radial-gradient(at 28% 81%, hsl(140, 100%, 71%) 0%, transparent 50%), radial-gradient(at 23% 43%, hsl(144, 100%, 88%) 0%, transparent 50%), radial-gradient(at 97% 96%, hsl(307, 100%, 50%) 0%, transparent 50%);
+}
+header h2,
+header p {
+  color: black;
+  font-weight: 400;
+}
+header h2 {
+  font-size: 5rem;
+}
+header p {
+  font-size: 1.25rem;
+}
+.services {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+.services .card {
+  width: 300px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  border-radius: 0.5rem;
+  color: white;
+  margin: 10px;
+  box-shadow: 0 2px 2px 0 rgba(34, 34, 34, 0.14), 0 3px 1px -2px rgba(34, 34, 34, 0.12), 0 1px 5px 0 rgba(34, 34, 34, 0.3);
+  transition: 200ms ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+.services .card::after {
+  content: '';
+  width: calc(50%);
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+}
+.services .card:hover {
+  box-shadow: 0 24px 38px 3px rgba(107, 107, 107, 0.14), 0 9px 46px 8px rgba(107, 107, 107, 0.12), 0 11px 15px -7px rgba(107, 107, 107, 0.3);
+}
+.services .card h5 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+.services .card p {
+  padding: 0 10px;
+}
+.services .card:nth-child(1) {
+  background-image: linear-gradient(45deg, hsl(346, 100%, 62.7%) 0%, hsl(9, 100%, 58.4%) 100%);
+}
+.services .card:nth-child(2) {
+  background-image: linear-gradient(45deg, hsl(186, 100%, 50%) 0%, hsl(244, 100%, 50%) 100%);
+}
+.services .card:nth-child(3) {
+  background-image: linear-gradient(45deg, hsl(259, 91%, 56.7%) 0%, hsl(293, 75%, 60.8%) 100%);
+}
+@media screen and (max-width: 800px) {
+  header h2 {
+    font-size: 2rem;
+  }
+}
+.modal {
+  display: none;
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 98vw;
+  height: 98vh;
+  z-index: 10;
+  background-color: rgba(240, 240, 240, 0.8);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.modal.show {
+  display: block;
+}
+.modal .head {
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  position: relative;
+  padding: 10px 5px;
+  color: white;
+}
+.modal .head .close {
+  cursor: pointer;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+}
+.modal .head .close svg path {
+  stroke: white;
+}
+.modal main {
+  width: inherit;
+  height: 94%;
+}
+.modal main form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.modal main form p {
+  font-size: 16px;
+  color: red;
+  margin-bottom: 10px;
+}
+.modal main form input[type=number] {
+  -moz-appearance: textfield;
+}
+.modal main form input[type=number]::-webkit-outer-spin-button,
+.modal main form input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.modal main form * {
+  display: block;
+}
+.modal main form input:not(input[type=radio]),
+.modal main form textarea {
+  padding: 8px 6px;
+  background-color: #fff;
+  border-width: 2px;
+  border-image: linear-gradient(45deg, #066fe7, #b109db) 1;
+  font-size: 18px;
+  outline: none;
+  width: 100%;
+  margin: 0 10px;
+  margin-top: 5px;
+}
+.modal main form input:not(input[type=radio]) {
+  margin-bottom: 5px;
+}
+.modal main form input:not(input[type=radio]):nth-child(1) {
+  margin-top: 0;
+}
+.modal main form input:not(input[type=radio]):nth-last-child(1) {
+  margin-bottom: 10px;
+}
+.modal main form textarea {
+  margin-bottom: 15px;
+  resize: vertical;
+  max-height: 300px;
+  min-height: 200px;
+}
+.modal main form button {
+  padding: 4px 12px;
+  background: #fff;
+  border-width: 2px;
+  border-image: linear-gradient(45deg, #066fe7, #b109db) 1;
+  font-size: 18px;
+  outline: none;
+  cursor: pointer;
+  color: black;
+}
+.modal main form button:hover {
+  background: linear-gradient(45deg, #066fe7, #b109db);
+  color: white;
+}
+.modal main form .service {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.modal main form .service label {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  font-size: 18px;
+  user-select: none;
+}
+.modal main form .service label:hover span {
+  background: #eee;
+}
+.modal main form .service label input {
+  opacity: 0;
+  position: absolute;
+}
+.modal main form .service label span {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 100%;
+  margin-right: 5px;
+  position: relative;
+}
+.modal main form .service label span::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  display: none;
+  left: 6px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.modal main form .service label input:checked ~ span::after {
+  display: block;
+}
+.modal main form .service label input:checked ~ span {
+  background: linear-gradient(45deg, #066fe7, #b109db);
+}
+h3.h3 {
+  font-size: 4rem;
+  font-weight: 800;
+  text-align: center;
+}
+.gr {
+  background-image: linear-gradient(45deg, #066fe7, #b109db);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  user-select: none;
+  cursor: text;
+}
+.project {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.project .projects {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.project .projects h3 {
+  margin-bottom: 20px;
+}
+.project .projects button {
+  margin-top: 10px;
+}
+footer {
+  position: relative;
+  padding: 0 5px;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-top: 1px solid black;
+  width: 100%;
+  background-color: white;
+}
+.btn-2 {
+  padding: 6px 0;
+  width: 50%;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 50px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+}
+.btn-2 a {
+  text-decoration: none;
+  color: black;
+}
+.btn-2:hover {
+  background-color: white;
+  color: black;
+}
+.btn-2:hover a {
+  color: white;
+}
+.btn-1 {
+  overflow: hidden;
+  position: relative;
+  padding: 6px 12px;
+  border: 1px solid black;
+  cursor: pointer;
+  color: black;
+  transition: 0.3s ease-out;
+  background-color: white;
+  font-size: 18px;
+}
+.btn-1 a {
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s ease-out;
+  z-index: 2;
+  position: relative;
+}
+.btn-1::after {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: 0;
+  right: 0;
+  width: 0;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  pointer-events: none;
+  transition: 0.3s ease-out;
+}
+.btn-1:hover {
+  border-color: white;
+  color: white;
+}
+.btn-1:hover a {
+  color: white;
+}
+.btn-1:hover::after {
+  top: 0;
+}
+.btn-1:nth-child(even) {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+.btn-1:nth-child(even) a {
+  color: white;
+}
+.btn-1:nth-child(even)::after {
+  background-color: white;
+}
+.btn-1:nth-child(even):hover {
+  border-color: black;
+}
+.btn-1:nth-child(even):hover a {
+  color: black;
+}
+@media screen and (max-width: 800px) {
+  .modal {
+    height: 100vh;
+    width: 100vw;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .modal .head {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .skills .skill {
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width: 400px) {
+  h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .skills {
+    margin-top: 20px;
+  }
+  .skills .skill {
+    grid-template-columns: auto;
+  }
+}
